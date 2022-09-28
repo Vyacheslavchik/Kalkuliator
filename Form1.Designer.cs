@@ -50,6 +50,7 @@
             this.button19 = new System.Windows.Forms.Button();
             this.delitButton = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panTable
@@ -59,6 +60,8 @@
             this.panTable.Name = "panTable";
             this.panTable.Size = new System.Drawing.Size(369, 53);
             this.panTable.TabIndex = 0;
+            this.panTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.panTable.Click += new System.EventHandler(this.panTable_Click);
             // 
             // oneButton
             // 
@@ -210,6 +213,7 @@
             this.answerButton.Text = "=";
             this.answerButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.answerButton.UseVisualStyleBackColor = true;
+            this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // umnogButton
             // 
@@ -267,11 +271,21 @@
             this.button21.Text = "button21";
             this.button21.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 393);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.delitButton);
             this.Controls.Add(this.button19);
@@ -297,6 +311,7 @@
             this.Name = "Form1";
             this.Text = "Калькулятор";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -324,6 +339,7 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button delitButton;
         private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Label label1;
     }
 }
 
